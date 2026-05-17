@@ -21,43 +21,7 @@ nagpur_xgb/
 └── requirements.txt
 ```
 
-## Setup
 
-```bash
-pip install -r requirements.txt
-```
-
-## Step 1 — Train
-
-```bash
-cd ml
-python train_xgboost.py
-```
-
-Expected output (approx):
-```
-Station         Train R²   Val R²   Test R²   MAE     CatAcc%
-Ambazari        0.9821     0.9010   0.8785    13.13   84.20  ✔
-Mahal           0.9834     0.9030   0.8817    15.16   83.50  ✔
-Civil_Lines     0.9856     0.9110   0.8972    14.81   85.10  ✔
-Ram_Nagar       0.9867     0.9230   0.9096    11.02   86.30  ✔
-```
-
-## Step 2 — Start API
-
-```bash
-cd backend
-python app.py
-# → http://localhost:5000
-```
-
-## Step 3 — Open Dashboard
-
-```bash
-cd frontend
-python -m http.server 8080
-# → http://localhost:8080
-```
 
 ## API Endpoints
 
